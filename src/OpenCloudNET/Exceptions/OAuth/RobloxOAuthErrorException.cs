@@ -1,4 +1,4 @@
-﻿namespace OpenCloud.Exceptions
+﻿namespace BloxTeams.OpenCloud.Exceptions
 {
     public class RobloxOAuthErrorException
     {

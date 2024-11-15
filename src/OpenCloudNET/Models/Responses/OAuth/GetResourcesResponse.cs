@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace OpenCloud.Models.Responses.OAuth
+namespace BloxTeams.OpenCloud.Models.Responses.OAuth
 {
     internal class GetResourcesResponse
     {

@@ -1,4 +1,4 @@
-﻿namespace OpenCloud.Exceptions.OAuth
+﻿namespace BloxTeams.OpenCloud.Exceptions.OAuth
 {
     public class OAuthUnauthorizedClientException(string? description) : BaseOAuthErrorException(description)
     {

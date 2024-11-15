@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace OpenCloud.Exceptions.Raw.OAuth
+namespace BloxTeams.OpenCloud.Exceptions.Raw.OAuth
 {
     internal class RobloxOAuthErrorException : Exception
     {

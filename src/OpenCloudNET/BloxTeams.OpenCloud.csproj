@@ -10,5 +10,14 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
   </ItemGroup>
+
+	<PropertyGroup>
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<Authors>iKingNinja</Authors>
+		<Company>BloxTeams</Company>
+		<Description>Library for interacting with Roblox OpenCloud.</Description>
+		<PackageTags>roblox;blox</PackageTags>
+		<RepositoryUrl>https://github.com/BloxTeams/OpenCloud.NET</RepositoryUrl>
+	</PropertyGroup>
 	
 </Project>

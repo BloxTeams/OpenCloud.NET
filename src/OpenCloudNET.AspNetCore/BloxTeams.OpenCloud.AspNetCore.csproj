@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OpenCloudNET\OpenCloud.csproj" />
+    <ProjectReference Include="..\OpenCloudNET\BloxTeams.OpenCloud.csproj" />
   </ItemGroup>
 	
   <ItemGroup>
@@ -16,7 +16,11 @@
 	
   <PropertyGroup>
 	  <VersionPrefix>1.1.0</VersionPrefix>
-	  <PackageId>BloxTeams.OpenCloud.AspNetCore</PackageId>
+	  <Authors>iKingNinja</Authors>
+	  <Company>BloxTeams</Company>
+	  <Description>BloxTeams.OpenCloud extensions for ASP.NET.</Description>
+	  <PackageTags>roblox;blox</PackageTags>
+	  <RepositoryUrl>https://github.com/BloxTeams/OpenCloud.NET</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

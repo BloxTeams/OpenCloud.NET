@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using OpenCloud.Models;
+using BloxTeams.OpenCloud.Models;
 
-namespace OpenCloud.Extensions
+namespace BloxTeams.OpenCloud.Extensions
 {
     public static class OpenCloudServiceCollectionExtensions
     {

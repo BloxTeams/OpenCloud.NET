@@ -1,9 +1,9 @@
-﻿using OpenCloud.Exceptions.OAuth;
-using OpenCloud.Exceptions.Raw.OAuth;
+﻿using BloxTeams.OpenCloud.Exceptions.Raw.OAuth;
+using BloxTeams.OpenCloud.Exceptions.OAuth;
 using System.Net.Http.Json;
 using System.Runtime.CompilerServices;
 
-namespace OpenCloud.Helpers
+namespace BloxTeams.OpenCloud.Helpers
 {
     internal static class ErrorHandlingHelper
     {

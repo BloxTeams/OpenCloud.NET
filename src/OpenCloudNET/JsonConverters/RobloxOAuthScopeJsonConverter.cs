@@ -1,8 +1,8 @@
-﻿using OpenCloud.Enums;
+﻿using BloxTeams.OpenCloud.Enums;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace OpenCloud.JsonConverters
+namespace BloxTeams.OpenCloud.JsonConverters
 {
     public class RobloxOAuthScopeJsonConverter : JsonConverter<RobloxOAuthScope>
     {

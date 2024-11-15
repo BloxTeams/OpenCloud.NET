@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Http;
-using OpenCloud.Enums;
+using BloxTeams.OpenCloud.Enums;
 
-namespace OpenCloud.AspNetCore.Models
+namespace BloxTeams.OpenCloud.AspNetCore.Models
 {
     public class ConfigureRobloxAuthenticationOptions
     {

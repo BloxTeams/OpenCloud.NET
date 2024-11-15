@@ -1,4 +1,4 @@
-﻿namespace OpenCloud.Models.OAuth
+﻿namespace BloxTeams.OpenCloud.Models.OAuth
 {
     public interface IResourceInfo
     {

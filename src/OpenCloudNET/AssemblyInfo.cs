@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("OpenCloud.AspNetCore")]
-namespace OpenCloud
+[assembly: InternalsVisibleTo("BloxTeams.OpenCloud.AspNetCore")]
+namespace BloxTeams.OpenCloud
 {
     internal class AssemblyInfo
     {

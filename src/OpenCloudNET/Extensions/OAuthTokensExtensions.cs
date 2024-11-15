@@ -1,13 +1,13 @@
-﻿using OpenCloud.Exceptions.OAuth;
-using OpenCloud.Helpers;
-using OpenCloud.JsonConverters;
-using OpenCloud.Models;
-using OpenCloud.Models.OAuth;
-using OpenCloud.Models.Responses.OAuth;
+﻿using BloxTeams.OpenCloud.Exceptions.OAuth;
+using BloxTeams.OpenCloud.Helpers;
+using BloxTeams.OpenCloud.JsonConverters;
+using BloxTeams.OpenCloud.Models;
+using BloxTeams.OpenCloud.Models.OAuth;
+using BloxTeams.OpenCloud.Models.Responses.OAuth;
 using System.Net.Http.Json;
 using System.Text.Json;
 
-namespace OpenCloud.Extensions
+namespace BloxTeams.OpenCloud.Extensions
 {
     public static class OAuthTokensExtensions
     {

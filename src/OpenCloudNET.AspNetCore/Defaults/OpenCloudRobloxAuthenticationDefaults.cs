@@ -1,4 +1,4 @@
-﻿namespace OpenCloud.AspNetCore.Defaults
+﻿namespace BloxTeams.OpenCloud.AspNetCore.Defaults
 {
     public static class OpenCloudRobloxAuthenticationDefaults
     {

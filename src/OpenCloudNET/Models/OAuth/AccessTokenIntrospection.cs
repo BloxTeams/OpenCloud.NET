@@ -1,8 +1,8 @@
-﻿using OpenCloud.Enums;
-using OpenCloud.JsonConverters;
+﻿using BloxTeams.OpenCloud.Enums;
+using BloxTeams.OpenCloud.JsonConverters;
 using System.Text.Json.Serialization;
 
-namespace OpenCloud.Models.OAuth
+namespace BloxTeams.OpenCloud.Models.OAuth
 {
     public interface IAccessToken
     {

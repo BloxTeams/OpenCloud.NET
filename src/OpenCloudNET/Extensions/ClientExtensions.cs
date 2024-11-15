@@ -1,9 +1,9 @@
-﻿using OpenCloud.Models.Responses.OAuth;
-using OpenCloud.Models;
+﻿using BloxTeams.OpenCloud.Models.Responses.OAuth;
+using BloxTeams.OpenCloud.Models;
 using System.Net.Http.Json;
-using OpenCloud.Helpers;
+using BloxTeams.OpenCloud.Helpers;
 
-namespace OpenCloud.Extensions
+namespace BloxTeams.OpenCloud.Extensions
 {
     public static class ClientExtensions
     {

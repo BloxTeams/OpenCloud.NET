@@ -1,4 +1,4 @@
-﻿namespace OpenCloud.Enums
+﻿namespace BloxTeams.OpenCloud.Enums
 {
     public enum ResourceOwnerType
     {

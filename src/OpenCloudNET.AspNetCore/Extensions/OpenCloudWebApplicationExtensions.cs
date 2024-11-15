@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using OpenCloud.AspNetCore.Defaults;
-using OpenCloud.AspNetCore.Models;
+using BloxTeams.OpenCloud.AspNetCore.Defaults;
+using BloxTeams.OpenCloud.AspNetCore.Models;
 
-namespace OpenCloud.AspNetCore.Extensions
+namespace BloxTeams.OpenCloud.AspNetCore.Extensions
 {
     public static class OpenCloudWebApplicationExtensions
     {

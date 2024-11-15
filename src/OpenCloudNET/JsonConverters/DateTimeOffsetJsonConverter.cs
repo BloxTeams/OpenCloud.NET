@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace OpenCloud.JsonConverters
+namespace BloxTeams.OpenCloud.JsonConverters
 {
     /// <summary>
     /// Converts unix timestamps to <see cref="DateTimeOffset"/>.

@@ -2,19 +2,19 @@
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using OpenCloud.AspNetCore.Defaults;
-using OpenCloud.AspNetCore.Models;
-using OpenCloud.Enums;
-using OpenCloud.Exceptions.OAuth;
-using OpenCloud.JsonConverters;
-using OpenCloud.Models;
+using BloxTeams.OpenCloud.AspNetCore.Defaults;
+using BloxTeams.OpenCloud.AspNetCore.Models;
+using BloxTeams.OpenCloud.Enums;
+using BloxTeams.OpenCloud.Exceptions.OAuth;
+using BloxTeams.OpenCloud.JsonConverters;
+using BloxTeams.OpenCloud.Models;
 using System.Collections.Specialized;
 using System.Text.Json;
 using System.Web;
-using OpenCloud.Extensions;
+using BloxTeams.OpenCloud.Extensions;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 
-namespace OpenCloud.AspNetCore.Extensions
+namespace BloxTeams.OpenCloud.AspNetCore.Extensions
 {
     public static class OpenCloudAuthenticationBuilderExtensions
     {

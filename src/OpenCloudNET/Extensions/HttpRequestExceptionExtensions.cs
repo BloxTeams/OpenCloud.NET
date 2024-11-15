@@ -1,4 +1,4 @@
-﻿namespace OpenCloud.Extensions
+﻿namespace BloxTeams.OpenCloud.Extensions
 {
     internal static class HttpRequestExceptionExtensions
     {

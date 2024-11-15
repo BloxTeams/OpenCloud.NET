@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace OpenCloud.Models
+namespace BloxTeams.OpenCloud.Models
 {
     /// <summary>
     /// Represents the client to interact with Roblox Open Cloud endpoints

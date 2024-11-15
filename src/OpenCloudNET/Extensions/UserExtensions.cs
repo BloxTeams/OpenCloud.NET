@@ -1,11 +1,11 @@
-﻿using OpenCloud.Helpers;
-using OpenCloud.Models;
-using OpenCloud.Models.OAuth;
-using OpenCloud.Models.Responses.OAuth;
+﻿using BloxTeams.OpenCloud.Helpers;
+using BloxTeams.OpenCloud.Models;
+using BloxTeams.OpenCloud.Models.OAuth;
+using BloxTeams.OpenCloud.Models.Responses.OAuth;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 
-namespace OpenCloud.Extensions
+namespace BloxTeams.OpenCloud.Extensions
 {
     public static class UserExtensions
     {

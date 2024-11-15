@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
-using OpenCloud.Enums;
+using BloxTeams.OpenCloud.Enums;
 
-namespace OpenCloud.AspNetCore.Extensions
+namespace BloxTeams.OpenCloud.AspNetCore.Extensions
 {
     public static class OpenCloudAuthenticationPropertiesExtensions
     {

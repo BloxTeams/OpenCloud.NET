@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace OpenCloud.Models
+namespace BloxTeams.OpenCloud.Models
 {
     [method:SetsRequiredMembers]
     public partial class ConfigureOpenCloudOptions()

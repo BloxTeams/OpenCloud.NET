@@ -1,7 +1,7 @@
-﻿using OpenCloud.Models.OAuth;
+﻿using BloxTeams.OpenCloud.Models.OAuth;
 using System.Text.Json.Serialization;
 
-namespace OpenCloud.Models.Responses.OAuth
+namespace BloxTeams.OpenCloud.Models.Responses.OAuth
 {
     internal class ResourceCreator : IResourceCreator
     {
