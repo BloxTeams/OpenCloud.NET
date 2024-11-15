@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCloud", "src\OpenCloudNET\OpenCloud.csproj", "{C329FE1E-CFD7-4B27-A0C8-B403E6F1028C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCloud.AspNetCore", "src\OpenCloudNET.AspNetCore\OpenCloudNET.AspNetCore.csproj", "{64D0F8BA-D090-4663-A80A-16B9F6853869}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{52DDFF77-420B-4FCE-8EDF-2DA5BECF5E16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationTest", "test\WebApplicationTest\WebApplicationTest.csproj", "{A88193EA-F410-4D18-BD08-28AC3C846594}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF1E3F59-146A-448C-A765-252702FF4600}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C329FE1E-CFD7-4B27-A0C8-B403E6F1028C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C329FE1E-CFD7-4B27-A0C8-B403E6F1028C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C329FE1E-CFD7-4B27-A0C8-B403E6F1028C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C329FE1E-CFD7-4B27-A0C8-B403E6F1028C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D0F8BA-D090-4663-A80A-16B9F6853869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D0F8BA-D090-4663-A80A-16B9F6853869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D0F8BA-D090-4663-A80A-16B9F6853869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D0F8BA-D090-4663-A80A-16B9F6853869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88193EA-F410-4D18-BD08-28AC3C846594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88193EA-F410-4D18-BD08-28AC3C846594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88193EA-F410-4D18-BD08-28AC3C846594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88193EA-F410-4D18-BD08-28AC3C846594}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C329FE1E-CFD7-4B27-A0C8-B403E6F1028C} = {FF1E3F59-146A-448C-A765-252702FF4600}
+		{64D0F8BA-D090-4663-A80A-16B9F6853869} = {FF1E3F59-146A-448C-A765-252702FF4600}
+		{A88193EA-F410-4D18-BD08-28AC3C846594} = {52DDFF77-420B-4FCE-8EDF-2DA5BECF5E16}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B6AE54F-8154-4F4F-A083-EBC5740D0D69}
+	EndGlobalSection
+EndGlobal
