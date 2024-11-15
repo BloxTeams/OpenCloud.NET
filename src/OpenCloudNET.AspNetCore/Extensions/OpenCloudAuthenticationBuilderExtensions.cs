@@ -11,6 +11,8 @@ using OpenCloud.Models;
 using System.Collections.Specialized;
 using System.Text.Json;
 using System.Web;
+using OpenCloud.Extensions;
+using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 
 namespace OpenCloud.AspNetCore.Extensions
 {
@@ -56,11 +58,42 @@ namespace OpenCloud.AspNetCore.Extensions
                 options.CorrelationCookie = authOptions.CorrelationCookie;
                 options.SaveTokens = authOptions.SaveTokens;
 
+                foreach (ClaimAction action in authOptions.ClaimActions)
+                {
+                    options.ClaimActions.Add(action);
+                }
+
                 Func<RedirectContext<OAuthOptions>, Task> onRedirectToAuthorizationEndpointCallback = authOptions.Events.OnRedirectToAuthorizationEndpoint.Equals(new OAuthOptions().Events.OnRedirectToAuthorizationEndpoint) ? OnRedirectToAuthorizationEndpointDefault : authOptions.Events.OnRedirectToAuthorizationEndpoint;
 
                 options.Events = new()
                 {
-                    OnCreatingTicket = authOptions.Events.OnCreatingTicket,
+                    OnCreatingTicket = async context =>
+                    {
+                        OpenCloudClient client = context.HttpContext.RequestServices.GetRequiredService<OpenCloudClient>();
+
+                        HttpRequestMessage req = new(HttpMethod.Get, context.Options.UserInformationEndpoint);
+                        req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", context.AccessToken);
+
+                        HttpResponseMessage res = await client.OAuthHttpClient.SendAsync(req);
+
+                        try
+                        {
+                            res.EnsureSuccessStatusCode();
+                        }
+                        catch (HttpRequestException ex)
+                        {
+                            if (ex.CouldBeOAuthFail())
+                            {
+                                await Helpers.ErrorHandlingHelper.HandleOAuthError(res);
+                            }
+                        }
+
+                        JsonElement user = JsonDocument.Parse(await res.Content.ReadAsStringAsync()).RootElement;
+
+                        context.RunClaimActions(user);
+
+                        await authOptions.Events.OnCreatingTicket.Invoke(context);
+                    },
                     OnTicketReceived = authOptions.Events.OnTicketReceived,
                     OnAccessDenied = authOptions.Events.OnAccessDenied,
                     OnRemoteFailure = authOptions.Events.OnRemoteFailure,

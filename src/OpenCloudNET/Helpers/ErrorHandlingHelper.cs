@@ -1,6 +1,7 @@
 ﻿using OpenCloud.Exceptions.OAuth;
 using OpenCloud.Exceptions.Raw.OAuth;
 using System.Net.Http.Json;
+using System.Runtime.CompilerServices;
 
 namespace OpenCloud.Helpers
 {

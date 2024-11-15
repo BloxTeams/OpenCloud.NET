@@ -13,5 +13,10 @@
   <ItemGroup>
 	  <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
+	
+  <PropertyGroup>
+	  <VersionPrefix>1.1.0</VersionPrefix>
+	  <PackageId>BloxTeams.OpenCloud.AspNetCore</PackageId>
+  </PropertyGroup>
 
 </Project>

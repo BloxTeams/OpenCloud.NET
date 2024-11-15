@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.OAuth;
+using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Http;
 using OpenCloud.Enums;
 
@@ -45,5 +46,7 @@ namespace OpenCloud.AspNetCore.Models
         };
 
         public OAuthEvents Events { get; set; } = new();
+
+        public ClaimActionCollection ClaimActions { get; } = [];
     }
 }
