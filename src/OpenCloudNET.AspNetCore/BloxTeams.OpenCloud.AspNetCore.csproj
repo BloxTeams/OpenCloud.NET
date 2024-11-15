@@ -15,7 +15,7 @@
   </ItemGroup>
 	
   <PropertyGroup>
-	  <VersionPrefix>1.1.0</VersionPrefix>
+	  <VersionPrefix>1.1.1</VersionPrefix>
 	  <Authors>iKingNinja</Authors>
 	  <Company>BloxTeams</Company>
 	  <Description>BloxTeams.OpenCloud extensions for ASP.NET.</Description>
