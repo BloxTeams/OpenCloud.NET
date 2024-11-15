@@ -6,7 +6,7 @@ namespace OpenCloud.Helpers
 {
     internal static class ErrorHandlingHelper
     {
-        public static async Task HandleOAuthError(HttpResponseMessage res, HttpRequestException ex)
+        public static async Task HandleOAuthError(HttpResponseMessage res)
         {
             RobloxOAuthErrorException oauthEx = await res.Content.ReadFromJsonAsync<RobloxOAuthErrorException>() ??
                 throw new Exception("Could not parse JSON");
@@ -19,7 +19,8 @@ namespace OpenCloud.Helpers
                 "unauthorized_client" => new OAuthUnauthorizedClientException(oauthEx.Description),
                 "unsupported_grant_type" => new OAuthUnsupportedGrantTypeException(oauthEx.Description),
                 "invalid_scope" => new OAuthInvalidScopeException(oauthEx.Description),
-                _ => oauthEx,
+                "invalid_token" => new OAuthInvalidTokenErrorException(oauthEx.Description),
+                _ => oauthEx
             };
         }
     }

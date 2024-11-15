@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCloud", "src\OpenCloudNET\OpenCloud.csproj", "{C329FE1E-CFD7-4B27-A0C8-B403E6F1028C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCloud.AspNetCore", "src\OpenCloudNET.AspNetCore\OpenCloudNET.AspNetCore.csproj", "{64D0F8BA-D090-4663-A80A-16B9F6853869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCloud.AspNetCore", "src\OpenCloudNET.AspNetCore\OpenCloud.AspNetCore.csproj", "{64D0F8BA-D090-4663-A80A-16B9F6853869}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{52DDFF77-420B-4FCE-8EDF-2DA5BECF5E16}"
 EndProject

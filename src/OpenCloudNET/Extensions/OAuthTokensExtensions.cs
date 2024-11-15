@@ -1,5 +1,4 @@
 ﻿using OpenCloud.Exceptions.OAuth;
-using OpenCloud.Exceptions.Raw.OAuth;
 using OpenCloud.Helpers;
 using OpenCloud.JsonConverters;
 using OpenCloud.Models;
@@ -54,9 +53,9 @@ namespace OpenCloud.Extensions
             }
             catch (HttpRequestException ex)
             {
-                if (ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                if (ex.CouldBeOAuthFail())
                 {
-                    await ErrorHandlingHelper.HandleOAuthError(res, ex);
+                    await ErrorHandlingHelper.HandleOAuthError(res);
                 }
             }
 
@@ -101,10 +100,10 @@ namespace OpenCloud.Extensions
             {
                 // Check if the exception is 400
 
-                if (ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                if (ex.CouldBeOAuthFail())
                 {
                     // RFC 6749 compliant exceptions
-                    await ErrorHandlingHelper.HandleOAuthError(res, ex);
+                    await ErrorHandlingHelper.HandleOAuthError(res);
                 }
 
                 throw;
@@ -151,9 +150,9 @@ namespace OpenCloud.Extensions
             }
             catch (HttpRequestException ex)
             {
-                if (ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                if (ex.CouldBeOAuthFail())
                 {
-                    await ErrorHandlingHelper.HandleOAuthError(res, ex);
+                    await ErrorHandlingHelper.HandleOAuthError(res);
                 }
             }
 
@@ -195,9 +194,9 @@ namespace OpenCloud.Extensions
             }
             catch (HttpRequestException ex)
             {
-                if (ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                if (ex.CouldBeOAuthFail())
                 {
-                    await ErrorHandlingHelper.HandleOAuthError(res, ex);
+                    await ErrorHandlingHelper.HandleOAuthError(res);
                 }
             }
         }
