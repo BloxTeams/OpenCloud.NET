@@ -23,7 +23,6 @@ namespace BloxTeams.OpenCloud.Extensions
         /// <exception cref="OAuthInvalidGrantException"></exception>
         /// <exception cref="OAuthUnauthorizedClientException"></exception>
         /// <exception cref="OAuthUnsupportedGrantTypeException"></exception>
-        /// <exception cref="OAuthInvalidScopeException"></exception>
         /// <exception cref="HttpRequestException"></exception>
         public static async Task<OAuthTokensSet> ExchangeCodeForTokensAsync(this OpenCloudClient client, string code, string? codeVerifier = null)
         {
@@ -75,7 +74,6 @@ namespace BloxTeams.OpenCloud.Extensions
         /// <exception cref="OAuthInvalidGrantException"></exception>
         /// <exception cref="OAuthUnauthorizedClientException"></exception>
         /// <exception cref="OAuthUnsupportedGrantTypeException"></exception>
-        /// <exception cref="OAuthInvalidScopeException"></exception>
         /// <exception cref="HttpRequestException"></exception>
         public static async Task<OAuthTokensSet> GetOAuthTokensAsync(this OpenCloudClient client, string refreshToken)
         {
@@ -128,7 +126,6 @@ namespace BloxTeams.OpenCloud.Extensions
         /// <exception cref="OAuthInvalidGrantException"></exception>
         /// <exception cref="OAuthUnauthorizedClientException"></exception>
         /// <exception cref="OAuthUnsupportedGrantTypeException"></exception>
-        /// <exception cref="OAuthInvalidScopeException"></exception>
         /// <exception cref="HttpRequestException"></exception>
         public static async Task<AccessTokenIntrospection> IntrospectAccessToken(this OpenCloudClient client, string accessToken)
         {
@@ -172,7 +169,6 @@ namespace BloxTeams.OpenCloud.Extensions
         /// <exception cref="OAuthInvalidGrantException"></exception>
         /// <exception cref="OAuthUnauthorizedClientException"></exception>
         /// <exception cref="OAuthUnsupportedGrantTypeException"></exception>
-        /// <exception cref="OAuthInvalidScopeException"></exception>
         /// <exception cref="HttpRequestException"></exception>
         public static async Task RevokeRefreshTokenAsync(this OpenCloudClient client, string refreshToken)
         {

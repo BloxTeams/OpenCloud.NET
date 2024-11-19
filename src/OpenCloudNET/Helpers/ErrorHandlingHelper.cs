@@ -21,6 +21,7 @@ namespace BloxTeams.OpenCloud.Helpers
                 "unsupported_grant_type" => new OAuthUnsupportedGrantTypeException(oauthEx.Description),
                 "invalid_scope" => new OAuthInvalidScopeException(oauthEx.Description),
                 "invalid_token" => new OAuthInvalidTokenErrorException(oauthEx.Description),
+                "insufficient_scope" => new OAuthInsufficientScopeException(oauthEx.Description),
                 _ => oauthEx
             };
         }

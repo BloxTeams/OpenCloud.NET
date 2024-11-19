@@ -21,6 +21,7 @@
 	  <Description>BloxTeams.OpenCloud extensions for ASP.NET.</Description>
 	  <PackageTags>roblox;blox</PackageTags>
 	  <RepositoryUrl>https://github.com/BloxTeams/OpenCloud.NET</RepositoryUrl>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

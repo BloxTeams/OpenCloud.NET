@@ -4,6 +4,7 @@ using BloxTeams.OpenCloud.Models.OAuth;
 using BloxTeams.OpenCloud.Models.Responses.OAuth;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using BloxTeams.OpenCloud.Exceptions.OAuth;
 
 namespace BloxTeams.OpenCloud.Extensions
 {
@@ -21,6 +22,7 @@ namespace BloxTeams.OpenCloud.Extensions
         /// <exception cref="OAuthUnauthorizedClientException"></exception>
         /// <exception cref="OAuthUnsupportedGrantTypeException"></exception>
         /// <exception cref="OAuthInvalidScopeException"></exception>
+        /// <exception cref="OAuthInsufficientScopeException"></exception>
         /// <exception cref="HttpRequestException"></exception>
         public static async Task<User> GetUserInfoAsync(this OpenCloudClient client, string accessToken)
         {
